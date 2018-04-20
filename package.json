@@ -1,8 +1,7 @@
 {
   "name": "linebot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "callback.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node callback.js"
@@ -11,5 +10,16 @@
   "license": "ISC",
   "dependencies": {
     "koa-bodyparser": "^2.5.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericshiu/NodeJsKoaLineBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ericshiu/NodeJsKoaLineBot/issues"
+  },
+  "homepage": "https://github.com/ericshiu/NodeJsKoaLineBot#readme",
+  "keywords": [],
+  "description": ""
 }
