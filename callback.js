@@ -20,7 +20,7 @@ app.use(_.post('/line/msg',async(ctx) => {
   postLineMsgReply(getReplyToken(ctx.request.body));
   ctx.body = 'ok';
 }));
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 console.log('服務器啟動');
 
 function getReplyToken(body){
