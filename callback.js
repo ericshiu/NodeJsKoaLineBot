@@ -30,7 +30,7 @@ function getReplyToken(body){
 
 function postLineMsgReply(replyToken){
   let form = "{" + "\"replyToken\": \"" + replyToken + "\"," + "\"messages\": [{\"type\": \"text\","
-  + "\"text\": \"\uDBC0\uDC84 Hello, user\"" + "}]}";
+  + "\"text\": \"\u0030\u0078\u0031\u0030\u0030\u0030\u0037\u0038 Hello, user\"" + "}]}";
   options.form = form;
   console.log(options);
   request(options, function (error, response, body) {  
