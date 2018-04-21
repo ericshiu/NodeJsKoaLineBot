@@ -21,7 +21,7 @@ app.use(_.post('/line/msg',async(ctx) => {
   ctx.body = 'ok';
 }));
 app.listen(process.env.PORT || 3000);
-console.log('服務器啟動');
+console.log('服務器啟動',process.env.PORT || 3000);
 
 function getReplyToken(body){
   console.log('此次回傳ReplyToken : ' , body.events[0].replyToken);
