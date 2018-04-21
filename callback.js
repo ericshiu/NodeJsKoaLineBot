@@ -30,7 +30,7 @@ function getReplyToken(body){
 
 function postLineMsgReply(replyToken){
   let form = "{" + "\"replyToken\": \"" + replyToken + "\"," + "\"messages\": [{\"type\": \"text\","
-  + "\"text\": \"\u0030\u0078\u0031\u0030\u0030\u0030\u0037\u0038 你好\n123\"" + "}]}";
+  + "\"text\": \"\u0030\u0078\u0031\u0030\u0030\u0030\u0037\u0038 你好\\n123\"" + "}]}";
   options.form = form;
   console.log(options);
   request(options, function (error, response, body) {  
