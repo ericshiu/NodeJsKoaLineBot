@@ -1,5 +1,6 @@
 const Koa = require('koa');
 const _ = require('koa-route');
+const utf8 = require('utf8');
 const app = new Koa();
 const request = require("request")
 let lineReplyUrl = "https://api.line.me/v2/bot/message/reply";
@@ -29,8 +30,10 @@ function getReplyToken(body){
 }
 
 function postLineMsgReply(replyToken){
+  var emoji = utf8.encode('0x100091');
+  console.log('表情編碼 : ' , emoji);
   let form = "{" + "\"replyToken\": \"" + replyToken + "\"," + "\"messages\": [{\"type\": \"text\","
-  + "\"text\": \"\u0030\u0078\u0031\u0030\u0030\u0030\u0037\u0038 你好\\n123\"" + "}]}";
+  + "\"text\": \""+emoji+" 你好\\n123\"" + "}]}";
   options.form = form;
   console.log(options);
   request(options, function (error, response, body) {  
