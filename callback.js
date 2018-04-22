@@ -30,7 +30,7 @@ function getReplyToken(body){
 }
 
 function postLineMsgReply(replyToken){
-  var emoji = utf8.encode('0x100091');
+  var emoji = utf8.decode('0x100091');
   console.log('表情編碼 : ' , emoji);
   let form = "{" + "\"replyToken\": \"" + replyToken + "\"," + "\"messages\": [{\"type\": \"text\","
   + "\"text\": \""+emoji+" 你好\\n123\"" + "}]}";
