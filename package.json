@@ -12,7 +12,8 @@
     "koa": "^2.5.0",
     "koa-bodyparser": "^2.5.0",
     "koa-route": "^3.2.0",
-    "request": "^2.85.0"
+    "request": "^2.85.0",
+    "utf8": "^3.0.0"
   },
   "devDependencies": {},
   "repository": {
@@ -25,8 +26,8 @@
   "homepage": "https://github.com/ericshiu/NodeJsKoaLineBot#readme",
   "keywords": [],
   "description": "",
-  "engines": { 
-    "node":"8.9.1",
-    "npm":"4.6.1" 
-    }
+  "engines": {
+    "node": "8.9.1",
+    "npm": "4.6.1"
+  }
 }
